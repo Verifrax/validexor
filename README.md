@@ -1,5 +1,9 @@
 # VALIDEXOR
 
+Package: @verifrax/validexor
+Binary: validexor
+Repository: Verifrax/validexor
+
 Primitive ID: PRIM-005
 Package: @verifrax/validexor
 Binary: validexor
