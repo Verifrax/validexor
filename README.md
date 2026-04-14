@@ -1,12 +1,10 @@
 # VALIDEXOR
 
-Primitive ID: PRIM-005  
-Package: @verifrax/validexor  
+Primitive ID: PRIM-005
+Package: @verifrax/validexor
 Binary: validexor
 
-Verifrax primitive — verification primitive for deterministic irreversible systems.
-
----
+VALIDEXOR is the Verifrax validation primitive: the bounded primitive surface for validation and admissibility checking without becoming authored protocol source, authority issuance, governed execution, public verification, proof publication, archive/reference, or intake.
 
 ## Proof artifacts
 
@@ -30,146 +28,114 @@ This repository is part of the VERIFRAX proof perimeter.
 
 ## Status
 
-Current release status: pre-stable primitive release line.
+* Surface class: validation primitive
+* Repository class: primitive package surface
+* Public host ownership: none
+* Package: `@verifrax/validexor`
+* Binary: `validexor`
+* Current repository posture: live primitive boundary
+* License: Apache License Version 2.0
 
-Canonical release target:
+## Boundary
 
-package version: 0.1.0  
-tag: v0.1.0
+This repository owns the validation primitive only.
 
-VALIDEXOR is part of the Verifrax primitive layer and follows the canonical primitive governance, naming, version, and packaging rules.
+It defines bounded validation behavior as a primitive.
+It does not author normative source material.
+It does not issue authority.
+It does not execute governed actions.
+It does not verify published material.
+It does not publish proof.
+It does not serve as archive/reference.
+It does not operate intake.
+It does not replace adjacent sovereign boundaries.
 
----
+## What it does
 
-## Purpose
+- defines the validation primitive for bounded Verifrax use
+- keeps primitive behavior inspectable and deterministic
+- supports adjacent repositories without claiming system-wide authority
+- anchors validation meaning as a primitive boundary
 
-VALIDEXOR verifies deterministic correctness after origin, custody, time, and boundary conditions have already been fixed.
+## What it does not do
 
-Once an artifact has a stable origin, preserved custody, explicit time boundary, and enforced operating boundary, the system still needs deterministic verification of whether the artifact satisfies the relevant contract. VALIDEXOR exists to make that verification explicit, repeatable, and non-ambiguous.
-
-It does not establish origin. It does not preserve custody. It does not fix temporal order. It does not enforce boundary conditions. It does not witness, judge, or terminate. Its role is narrower: verify contract-level correctness under already-fixed prior conditions.
-
----
-
-## What This Primitive Does
-
-- verifies an artifact or state against deterministic validation rules
-- distinguishes valid from invalid outcomes under a fixed contract
-- emits verification output suitable for downstream attestation and judgment
-
----
-
-## What This Primitive Does Not Do
-
-- does not establish first origin
-- does not preserve custody continuity
-- does not fix temporal ordering
-- does not enforce operational boundaries
-- does not witness or attest
-- does not judge validity
-- does not terminate lifecycle
-
----
-
-## Behavioral Contract
-
-Invocation model:
-
-executable: validexor  
-package: @verifrax/validexor  
-runtime: CLI-first
-
-The primitive operates on an artifact whose origin, custody, time, and boundary surfaces are already fixed.
-
-If the verification contract is absent, ambiguous, or non-deterministic, VALIDEXOR must not fabricate a valid result.
-
-Exit codes:
-
-0 — verification completed successfully  
-non-zero — invocation failed or contract violated
-
----
-
-## Usage
-
-Install:
-
-npm install -g @verifrax/validexor
-
-Execute:
-
-validexor artifact.json
-
-stdin example:
-
-cat artifact.json | validexor
-
----
-
-## Determinism Guarantees
-
-For identical canonical input, VALIDEXOR must produce identical verification output.
-
-No hidden environmental state may influence the result.
-
-VALIDEXOR assumes an already-bounded origin, custody, time, and enforcement surface and does not substitute for those earlier primitives or for downstream attestation and judgment.
-
----
-
-## Security Model
-
-VALIDEXOR protects against ambiguity in contract verification.
-
-Its security value is to prevent silent drift between what is claimed to satisfy a contract and what deterministically does satisfy it. It does not itself attest, judge, or terminate lifecycle state.
-
----
-
-## Relationship to Other Primitives
-
-Canonical primitive order:
-
-1 originseal  
-2 archicustos  
-3 kairoclasp  
-4 limenward  
-5 validexor  
-6 attestorium  
-7 irrevocull  
-8 guillotine
-
-Repositories:
-
-https://github.com/Verifrax/originseal  
-https://github.com/Verifrax/archicustos  
-https://github.com/Verifrax/kairoclasp  
-https://github.com/Verifrax/limenward  
-https://github.com/Verifrax/validexor  
-https://github.com/Verifrax/attestorium  
-https://github.com/Verifrax/irrevocull  
-https://github.com/Verifrax/guillotine
-
----
-
-## Installation
-
-npm install -g @verifrax/validexor
-
-command -v validexor
-
-Repository:
-- GitHub: https://github.com/Verifrax/validexor
-- Package: @verifrax/validexor
-- Binary: validexor
-
----
-
-## License
-
-MIT
+- not authored protocol source; that belongs to VERIFRAX
+- not authority issuance; that belongs to AUCTORISEAL
+- not governed execution; that belongs to CORPIFORM
+- not public verification; that belongs to VERIFRAX-verify
+- not proof publication; that belongs to proof
+- not archive/reference; that belongs to SIGILLARIUM
+- not intake; that belongs to apply
+- not constitutional doctrine; that belongs to SYNTAGMARIUM
+- not canonical world-state; that belongs to ORBISTIUM
+- not reconciliation or repair; that belongs to CONSONORIUM
+- not sovereign cognition; that belongs to TACHYRIUM
 
 ## Adjacent sovereign surfaces
 
-This repository is part of the Verifrax sovereign stack and remains bounded relative to:
+- `VERIFRAX` — authored protocol and evidence-root boundary
+- `AUCTORISEAL` — authority issuance
+- `CORPIFORM` — governed execution
+- `VERIFRAX-verify` — public verification
+- `proof` — proof publication
+- `SIGILLARIUM` — archive/reference
+- `apply` — intake
 
-- **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** for terminal recognition
-- **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** for terminal recourse
+VALIDEXOR is a primitive.
+It does not become the repositories that consume it.
+
+## Public surface
+
+The public surface of this repository is its repository identity, README boundary, package surface, binary surface, and primitive materials carried by this repository.
+
+Publication here is not authored source.
+Publication here is not authority.
+Publication here is not execution.
+Publication here is not verification.
+Publication here is not proof publication.
+Publication here is not archive/reference.
+Publication here is not intake.
+
+## Package / host / repo truth
+
+Repository truth for VALIDEXOR lives in this repository.
+
+Package truth for this primitive is `@verifrax/validexor`.
+Binary truth for this primitive is `validexor`.
+Package, binary, and repository truth are related but not interchangeable.
+
+## Validation meaning in-system
+
+Validation in-system means the stack can point to VALIDEXOR and say that a bounded validation primitive belongs to this boundary.
+
+Validation here validates.
+Validation here does not author.
+Validation here does not issue authority.
+Validation here does not execute.
+Validation here does not verify.
+Validation here does not publish proof.
+
+That does not by itself mean:
+
+- the primitive became authored protocol source
+- the primitive issued authority
+- the primitive executed a governed action
+- the primitive verified truth
+- the primitive published proof
+- the primitive replaced archive/reference
+- the primitive replaced intake
+- the primitive replaced the evidence-root repository
+
+## Not this
+
+VALIDEXOR is not authored protocol source.
+VALIDEXOR is not authority issuance.
+VALIDEXOR is not governed execution.
+VALIDEXOR is not public verification.
+VALIDEXOR is not proof publication.
+VALIDEXOR is not archive/reference.
+VALIDEXOR is not intake.
+
+## License
+
+Apache License Version 2.0
